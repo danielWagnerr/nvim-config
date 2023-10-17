@@ -30,5 +30,18 @@ require("lazy").setup({
   {'hrsh7th/nvim-cmp'},
   {'L3MON4D3/LuaSnip'},
   "jose-elias-alvarez/null-ls.nvim",
+  {
+  "nvim-tree/nvim-tree.lua",
+  version = "*",
+  lazy = false,
+  dependencies = {
+    "nvim-tree/nvim-web-devicons",
+  },
+  config = function()
+    require("nvim-tree").setup {}
+  end,
+  },
+  "antosha417/nvim-lsp-file-operations",
+  "echasnovski/mini.base16",
 })
 
